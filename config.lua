@@ -276,7 +276,7 @@ Config.DoorList = {
 	{
 		objName = 'prop_lrggate_02_ld',
 		objCoords  = vector3(-844.051, 155.9619, 66.03221),
-		textCoords = vector3(-844.0, 155.9, 65.0),
+		textCoords = vector3(-844.00, 159.21, 66.80),
 		authorizedJobs = { 'mafia' },
 		locked = true,
 		distance = 12,
@@ -284,41 +284,61 @@ Config.DoorList = {
 	},
 	-- House Double Door
 	{
-		textCoords = vector3(-816.896, 178.098, 71.82738),
+		textCoords = vector3(-816.896, 178.098, 72.82738),
 		authorizedJobs = { 'mafia' },
-		locked = false,
+		locked = true,
 		distance = 4,
 		doors = {
 			{
 				objName = 'v_ilev_mm_doorm_l',
-				objYaw = -90.0,
+				objYaw = -69.0,
 				objCoords  = vector3(-816.1068, 177.5109, 72.82738)
 			},
 
 			{
 				objName = 'v_ilev_mm_doorm_r',
-				objYaw = -90.0,
+				objYaw = -69.0,
 				objCoords  = vector3(-816.716, 179.098, 72.82738)
 			}
 		}
 	},
 	-- House Back Double Door
 	{
-		textCoords = vector3(-793.2943, 181.5075, 72.04045),
+		textCoords = vector3(-793.2943, 181.5075, 73.04045),
 		authorizedJobs = { 'mafia' },
-		locked = false,
-		distance = 4,
+		locked = true,
+		distance = 2,
 		doors = {
 			{
 				objName = 'prop_bh1_48_backdoor_l',
-				objYaw = -90.0,
+				objYaw = 110.5,
 				objCoords  = vector3(-793.3943, 180.5075, 73.04045)
 			},
 
 			{
 				objName = 'prop_bh1_48_backdoor_r',
-				objYaw = -90.0,
+				objYaw = 110.5,
 				objCoords  = vector3(-794.1853, 182.568, 73.04045)
+			}
+		}
+	},
+	-- House Back Double Door 2
+	{
+		textCoords = vector3(-795.5657, 177.8214, 73.04045),
+		authorizedJobs = { 'mafia' },
+		locked = true,
+		distance = 2,
+		doors = {
+			{
+				objName = 'prop_bh1_48_backdoor_l',
+				objYaw = 21.5,
+				objCoords  = vector3(-796.5657, 177.2214, 73.04045)
+			},
+
+			{
+				objName = 'prop_bh1_48_backdoor_r',
+				objYaw = 21.5,
+				objCoords  = vector3(-794.5051, 178.0124, 73.04045)
 			}
 		}
 	},
@@ -329,7 +349,7 @@ Config.DoorList = {
 		textCoords = vector3(-815.2816, 185.975, 71.99993),
 		authorizedJobs = { 'mafia' },
 		locked = true,
-		distance = 4,
+		distance = 6,
 		size = 2
 	},
 }
