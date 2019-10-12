@@ -270,4 +270,46 @@ Config.DoorList = {
 		size = 2
 	}
 	--]]
+	
+	-- Michael's House set for Mafia
+	-- Gate
+	{
+		objName = 'prop_lrggate_02_ld',
+		objCoords  = vector3(-844.051, 155.9619, 66.03221),
+		textCoords = vector3(-844.0, 155.9, 65.0),
+		authorizedJobs = { 'mafia' },
+		locked = true,
+		distance = 12,
+		size = 2
+	},
+	-- House Double Door
+	{
+		textCoords = vector3(-816.896, 178.098, 71.82738),
+		authorizedJobs = { 'mafia' },
+		locked = false,
+		distance = 4,
+		doors = {
+			{
+				objName = 'v_ilev_mm_doorm_l',
+				objYaw = -90.0,
+				objCoords  = vector3(-816.1068, 177.5109, 72.82738)
+			},
+
+			{
+				objName = 'v_ilev_mm_doorm_r',
+				objYaw = -90.0,
+				objCoords  = vector3(-816.716, 179.098, 72.82738)
+			}
+		}
+	},
+	-- Garage Door
+	{
+		objName = 'prop_ld_garaged_01',
+		objCoords  = vector3(-815.2816, 185.975, 72.99993),
+		textCoords = vector3(-815.2816, 185.975, 71.99993),
+		authorizedJobs = { 'mafia' },
+		locked = true,
+		distance = 4,
+		size = 2
+	},
 }
