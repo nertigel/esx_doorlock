@@ -302,6 +302,26 @@ Config.DoorList = {
 			}
 		}
 	},
+	-- House Back Double Door
+	{
+		textCoords = vector3(-793.2943, 181.5075, 72.04045),
+		authorizedJobs = { 'mafia' },
+		locked = false,
+		distance = 4,
+		doors = {
+			{
+				objName = 'prop_bh1_48_backdoor_l',
+				objYaw = -90.0,
+				objCoords  = vector3(-793.3943, 180.5075, 73.04045)
+			},
+
+			{
+				objName = 'prop_bh1_48_backdoor_r',
+				objYaw = -90.0,
+				objCoords  = vector3(-794.1853, 182.568, 73.04045)
+			}
+		}
+	},
 	-- Garage Door
 	{
 		objName = 'prop_ld_garaged_01',
