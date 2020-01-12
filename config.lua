@@ -59,14 +59,14 @@ Config.DoorList = {
 	},
 
 	-- Armory
-	{
+	--[[{
 		objName = 'v_ilev_arm_secdoor',
 		objYaw = -90.0,
 		objCoords  = vector3(452.6, -982.7, 30.6),
 		textCoords = vector3(453.0, -982.6, 31.7),
 		authorizedJobs = { 'police' },
 		locked = true
-	},
+	},--]]
 
 	-- Captain Office
 	{
@@ -351,5 +351,46 @@ Config.DoorList = {
 		locked = true,
 		distance = 6,
 		size = 2
+	},
+	-- Pacific Bank Banker Door
+	--[[{ -- locked by MF_PacificStandard
+		objName = 'hei_v_ilev_bk_gate2_pris',
+		objCoords  = vector3(261.99899291992, 221.50576782227, 106.68346405029),
+		textCoords = vector3(261.99899291992, 221.50576782227, 107.68346405029), 
+		authorizedJobs = { 'banker' },
+		locked = false,
+		distance = 12,
+		size = 0.6
+	},--]]
+	{
+
+		objName = 'hei_v_ilev_bk_gate_pris',
+		objYaw = -20.0,
+		objCoords  = vector3(256.79,220.20,106.50),
+		textCoords = vector3(256.79,220.20,106.50),
+		authorizedJobs = { 'banker' },
+		locked = true,
+		distance = 3
+	},
+
+	-- Ammunation
+	{
+		textCoords = vector3(811.90, -2148.17, 29.62),
+		authorizedJobs = { 'ammu' },
+		locked = true,
+		distance = 2.5,
+		doors = {
+			{
+				objName = 'v_ilev_gc_door03', -- right
+				objYaw = 180.0,
+				objCoords = vector3(811.19, -2148.23, 29.62)
+			},
+
+			{
+				objName = 'v_ilev_gc_door04', -- left
+				objYaw = 0.0,
+				objCoords = vector3(812.58, -2148.23, 29.62)
+			}
+		}
 	},
 }
